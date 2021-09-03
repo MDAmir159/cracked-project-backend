@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.use(function(req,res,next){
      res.setHeader('Access-Control-Allow-Origin', 'https://cracked-project.herokuapp.com');
+     next();
 });
 
 const logInRouter = require('./view/logIn');
