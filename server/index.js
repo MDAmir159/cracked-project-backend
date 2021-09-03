@@ -10,7 +10,8 @@ app.use(express.json());
 app.options('*', cors()) // include before other routes
 
 app.use(function (req, res, next) {
-
+    
+    res.json({message : "Inside"});
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', 'https://fast-meadow-49435.herokuapp.com/');
 
