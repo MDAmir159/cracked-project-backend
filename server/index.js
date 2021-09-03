@@ -7,6 +7,8 @@ app.use(express.urlencoded({extended : true}));
 app.use(cors())
 app.use(express.json());
 
+app.options('*', cors()) // include before other routes
+
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
