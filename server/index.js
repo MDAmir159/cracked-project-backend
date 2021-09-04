@@ -7,7 +7,8 @@ app.use(express.urlencoded({extended : true}));
 app.use(cors())
 app.use(express.json());
 
-//app.options('*', cors()) // include before other routes
+app.options('*', cors()) // include before other routes
+app.use(express.json({ type: "application/json" }));
 
 //app.use(function (req, res, next) {
     
