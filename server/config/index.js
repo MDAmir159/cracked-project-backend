@@ -1,10 +1,20 @@
+// const mysql = require('mysql')
+// const db = mysql.createConnection({
+//     connectionLimit : 100,
+//     host : 'remotemysql.com',
+//     user : '8nRGnKt8lL',
+//     password : 'OX26DADPXe',
+//     database : '8nRGnKt8lL'
+// })
+
+
 const mysql = require('mysql')
 const db = mysql.createConnection({
     connectionLimit : 100,
-    host : 'remotemysql.com',
-    user : '8nRGnKt8lL',
-    password : 'OX26DADPXe',
-    database : '8nRGnKt8lL'
+    host : 'localhost',
+    user : 'root',
+    password : '',
+    database : 'dlgt_project_2'
 })
 
 

@@ -6,6 +6,8 @@ router.post('/login',(req,res) =>{
     const userHandleName = req.body.tempUserDetails.tempUserHandleName;
     const userEmailAddress = req.body.tempUserDetails.tempUserEmail;
     const userPassword = req.body.tempUserDetails.tempUserPassword;
+
+    // console.log(req.body);
     
     try {
         db.query(`SELECT * FROM users where userHandle = '${userHandleName}' and userEmailAddress = '${userEmailAddress}'
