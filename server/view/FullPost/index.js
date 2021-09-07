@@ -28,7 +28,8 @@ router.post('/fetchComments',(req,res) =>{
             if(error){
                 console.log(error);
             } else {
-                res.send(result);
+                //res.send(result);
+                res.status(200).json({message : "a data"});
             }
         })
 })
