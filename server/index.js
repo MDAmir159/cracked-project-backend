@@ -26,4 +26,5 @@ app.use('/post',postRouter);
 
 app.listen(PORT , () =>{
     console.log(`Server listening on ${PORT}`);
+    console.log("hola");
 });
