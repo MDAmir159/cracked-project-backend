@@ -7,7 +7,6 @@
 //     database : '8nRGnKt8lL'
 // })
 
-
 const mysql = require('mysql')
 const db = mysql.createConnection({
     connectionLimit : 100,
