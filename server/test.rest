@@ -1,5 +1,14 @@
 
 ###
-GET http://localhost:9001/homeElements/postListItems
+POST http://localhost:9001/homeElements/postNewElements
+Content-Type: application/json
 
-
+{
+  "tempNewPost": {
+    "postUserId": 10009,
+    "postUserName": "Crosby",
+    "postDescription": "absolute loss",
+    "postInsertedTime": "",
+    "postUpdatedTime": ""
+  }
+}
