@@ -5,9 +5,8 @@ This is the backend repository of the [Friends-blog](https://github.com/MDAmir15
 
 # Tech Used
 
-Dillinger uses a number of open source projects to work properly:
-- [React.js](https://reactjs.org/)- for front end development
-- [React Redux](https://react-redux.js.org/) - for frontend  state manipulation
+[Friends-blog](https://github.com/MDAmir159/friends-blog-frontend) uses a number of open source projects to work properly:
+
 - [Node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework
 
