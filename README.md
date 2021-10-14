@@ -49,7 +49,7 @@ Want to contribute? Great!
 ```
 - Open a pull request
 
-# Server Side
+# Front End Side
 
 Here is the link to the frontend side repository
  [friends-blog-frontend](https://github.com/MDAmir159/friends-blog-frontend)
