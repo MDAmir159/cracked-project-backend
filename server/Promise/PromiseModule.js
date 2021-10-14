@@ -6,7 +6,7 @@ const PromiseModule = {
     readData
 }
 
-function affectingDataBase(sqlQuery , inputValue) {
+async function affectingDataBase(sqlQuery , inputValue) {
     return new Promise((resolve , reject) => {
         db.query(sqlQuery , inputValue , (error , result) =>{
             if(error){

@@ -6,7 +6,7 @@ const db = require('../../config/index');
 const AllHomeQueries = require('../../Query/HomeQuery/Home');
 
 const HTTPStatus = require('../../HttpsStatus/index')
-router.post('/postNewElements',(req,res) =>{
+router.post('/postNewElements',async (req,res) =>{
 
     try {
         const {
@@ -17,9 +17,9 @@ router.post('/postNewElements',(req,res) =>{
             postUserName,
         } = req.body.tempNewPost;
 
-        const addNewPost = AllHomeQueries.postNewElements(postUserId,postDescription,postInsertedTime,postUpdatedTime,postUserName);
+        const addNewPost = await AllHomeQueries.postNewElements(postUserId,postDescription,postInsertedTime,postUpdatedTime,postUserName);
         // const addNewPost = AllHomeQueries.postNewElements(req.body.tempNewPost);
-        console.log(addNewPost , "line 21");
+        // console.log(addNewPost , "line 21");
         if(addNewPost){
             res.status(HTTPStatus.CREATED).json({
                 status : "created successfully",
